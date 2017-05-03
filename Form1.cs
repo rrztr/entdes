@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Práctica2_2EV
 {
     public partial class form_add_barco : Form
     {
+		
+ SoundPlayer rickastley = new SoundPlayer(@"..\..\..\..\Sonidos\nevergiveup.wav");
 
         public form_add_barco()
         {
             InitializeComponent();
             this.combo_prioridad.SelectedIndex = 0;
-
+	    rickastley.Play();
             
         }
 
